@@ -1,0 +1,196 @@
+{% load static %}
+{% load cloudinary %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Pivot Club</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="{% static 'css/elegant-fonts.css' %}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .hello-msg{
+          font-size: 18px;
+          color: #fff;
+          margin-right: 20px;
+        }
+      </style>
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <!-- <a class="d-block" href="{% url 'index' %}" rel="home"><img class="d-block" src="{% static 'img/logo.png' %}" alt="logo"></a> -->
+                            <a class="d-block" href="{% url 'index' %}" rel="home">Pivot Club</a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li {% if request.path == '/' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'index' %}">Home</a></li>
+                                <li {% if request.path == '/about' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'about' %}">About us</a></li>
+                                <li {% if request.path == '/projects' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'projects' %}">Projects</a></li>
+                                <li {% if request.path == '/papers' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'papers' %}">Research Papers</a></li>
+                                <li {% if request.path == '/teams' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'teams' %}">Teams</a></li>
+                                <li {% if request.path == '/gallery' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'gallery' %}">Gallery</a></li>
+                                <li {% if request.path == '/articles' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'articles' %}">Articles</a></li>
+                                <li {% if request.path == '/contact' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'contact' %}">Contact</a></li>
+                                <li {% if request.path == '/contact' %}class="current-menu-item" {% endif %}><a
+                                        href="{% url 'contact' %}">Sign Up</a></li>
+                            </ul>
+                            <!--<span class="hello-msg">Hello, {{request.username}}</span>
+                            <span ><a class="hello-msg" href="{% url 'signout' %}">Logout</a></span>-->
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <!-- <h2><a class="foot-logo" href="#"><img src="{% static 'img/foot-logo.png' %}" alt=""></a></h2> -->
+                            <h2>Pivot Club</h2>
+
+                            <p>The hub for innovators and inventors</p>
+
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <li><a href="https://www.facebook.com/pivotclub/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/pivot_ku"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/thepivotclubku/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Useful Links</h2>
+
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Research Papers</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                            <h2>Latest Articles</h2>
+
+                            <ul>
+                                <li>
+                                    <h3><a href="#">A new cause to help</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#">We love to help people</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#">The new ideas for helping</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+                            </ul>
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul>
+                                <li><i class="fa fa-phone"></i><span>+254 741 924065</span></li>
+                                <li><i class="fa fa-envelope"></i><span>thepivotclub@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>Kenyatta University, Nairobi.</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+                        <div class="subscribe-form">
+                            <form class="d-flex flex-wrap align-items-center">
+                                <input type="email" placeholder="Your email">
+                                <input type="submit" value="send">
+                            </form><!-- .flex -->
+                        </div><!-- .search-widget -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src="{% static 'js/jquery.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery.collapsible.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/swiper.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/circle-progress.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery.countTo.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery.barfiller.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/custom.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container mt-2 mb-3">
+  <div class="card-columns">
+    {% for image in object_list %}
+        <div class="card">
+          <img src="{{ image.photo.url }}" class="card-img-top" alt="{{ image.caption }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ image.caption }}</h5>
+            <p class="card-text">{{ image.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</div>
+{% endblock %}

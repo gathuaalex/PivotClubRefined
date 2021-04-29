@@ -1,0 +1,534 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="swiper-container hero-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide hero-content-wrap">
+            <img src="{% static 'img/hero.JPG' %}" alt="">
+
+            <div class="hero-content-overlay position-absolute w-100 h-100">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>Connect</h1>
+                                <h4>to the world</h4>
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content mt-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus ullamcorper</p>
+                            </div><!-- .entry-content -->
+
+                            <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                <a href="#" class="btn gradient-bg mr-2">Join Us</a>
+                                <a href="#" class="btn orange-border">Read More</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .hero-content-overlay -->
+        </div><!-- .hero-content-wrap -->
+
+        <div class="swiper-slide hero-content-wrap">
+            <img src="{% static 'img/hero.JPG' %}" alt="">
+
+            <div class="hero-content-overlay position-absolute w-100 h-100">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>Epitome</h1>
+                                <h4>of engineering</h4>
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content mt-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus ullamcorper</p>
+                            </div><!-- .entry-content -->
+
+                            <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                <a href="#" class="btn gradient-bg mr-2">Support Us</a>
+                                <a href="#" class="btn orange-border">Read More</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .hero-content-overlay -->
+        </div><!-- .hero-content-wrap -->
+
+        <div class="swiper-slide hero-content-wrap">
+            <img src="{% static 'img/hero.JPG' %}" alt="">
+
+            <div class="hero-content-overlay position-absolute w-100 h-100">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>Enhance</h1>
+                                <h4>your skills</h4>
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content mt-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus ullamcorper</p>
+                            </div><!-- .entry-content -->
+
+                            <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                <a href="#" class="btn gradient-bg mr-2">Join Us</a>
+                                <a href="#" class="btn orange-border">Read More</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .hero-content-overlay -->
+        </div><!-- .hero-content-wrap -->
+    </div><!-- .swiper-wrapper -->
+
+    <div class="pagination-wrap position-absolute w-100">
+        <div class="container">
+            <div class="swiper-pagination"></div>
+        </div><!-- .container -->
+    </div><!-- .pagination-wrap -->
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next flex justify-content-center align-items-center">
+        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+    </div>
+
+    <div class="swiper-button-prev flex justify-content-center align-items-center">
+        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+    </div>
+</div><!-- .hero-slider -->
+
+<div class="home-page-icon-boxes">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                <div class="icon-box active">
+                    <figure class="d-flex justify-content-center">
+                        <img src="{% static 'img/hands-gray.png' %}" alt="">
+                        <img src="{% static 'img/hands-white.png' %}" alt="">
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vision</h3>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>To be a center for research and development in the technological world and bridge the gap between academia and the industrial settings. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <figure class="d-flex justify-content-center">
+                        <img src="{% static 'img/donation-gray.png' %}" alt="">
+                        <img src="{% static 'img/donation-white.png' %}" alt="">
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Mision</h3>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>To provide solutions to the existing challenges facing the technical field through a well controlled research and promotion of creativity and innovation. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <figure class="d-flex justify-content-center">
+                        <img src="{% static 'img/charity-gray.png' %}" alt="">
+                        <img src="{% static 'img/charity-white.png' %}" alt="">
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Values</h3>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .home-page-icon-boxes -->
+
+<div class="home-page-welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                <div class="welcome-content">
+                    <header class="entry-header">
+                        <h2 class="entry-title">Welcome to our Club</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content mt-5">
+                        <p>Kenyatta University Pivot Club is a group of engineering students that are divided into their areas of study with the aim of carrying out major and minor research on the questions and challenges facing Kenyan industries, and as a result they ultimately point towards bridging the gap that exists between academia an the industrial world.</p>
+                    </div><!-- .entry-content -->
+
+                    <div class="entry-footer mt-5">
+                        <a href="#" class="btn gradient-bg mr-2">Read More</a>
+                    </div><!-- .entry-footer -->
+                </div><!-- .welcome-content -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
+                <img src="{% static 'img/welcome.JPG' %}" alt="welcome">
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .home-page-icon-boxes -->
+
+<div class="home-page-events">
+    <div class="container">
+                    <div class="row">
+                        <div class="coL-12">
+                            <div class="section-heading">
+                                <h2 class="entry-title">Popular Articles</h2>
+                            </div><!-- .section-heading -->
+                        </div><!-- .col -->
+                    </div>
+
+                    <div class="row featured-articles">
+                        {% for article in articles %}
+                    <div class="col-md-4 event-wrap">
+                        <figure class="m-0">
+                            <img src="{{ article.photo.url }}" alt="">
+                        </figure>
+
+                        <div class="event-content-wrap mt-2">
+                            <header class="entry-header d-flex flex-wrap align-items-center">
+                                <h3 class="entry-title w-100 m-0"><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h3>
+
+                                <div class="posted-date">
+                                    <span>{{ article.created_on.date }}</span>
+                                </div><!-- .posted-date -->
+
+                                <div class="cats-links">
+                                    <a href="{{ article.author.get_absolute_url }}">{{ article.author }}</a>
+                                </div><!-- .cats-links -->
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content">
+                                <p class="m-0 text-truncate">{{ article.body }}</p>
+                            </div><!-- .entry-content -->
+
+                            <div class="entry-footer">
+                                <a href="{{ article.get_absolute_url }}">Read More</a>
+                            </div><!-- .entry-footer -->
+                        </div><!-- .event-content-wrap -->
+                    </div><!-- .event-wrap -->
+                    {% endfor %}
+                
+        </div><!-- .row --><!-- .featutured-articles -->
+    </div><!-- .container -->
+</div><!-- .home-page-events -->
+
+<div class="our-causes">
+    <div class="container">
+        <div class="row">
+            <div class="coL-12">
+                <div class="section-heading">
+                    <h2 class="entry-title">Our Teams</h2>
+                </div><!-- .section-heading -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container causes-slider">
+                    <div class="swiper-wrapper">
+                        {% for team in teams %}
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{{ team.photo.url }}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">{{ team.name }}</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">{{ team.description }}</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+                        {% endfor %}
+                    </div><!-- .swiper-wrapper -->
+
+                </div><!-- .swiper-container -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                </div>
+
+                <div class="swiper-button-prev flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .our-causes -->
+
+<div class="our-causes">
+    <div class="container">
+        <div class="row">
+            <div class="coL-12">
+                <div class="section-heading">
+                    <h2 class="entry-title">Featured Projects</h2>
+                </div><!-- .section-heading -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container causes-slider">
+                    <div class="swiper-wrapper">
+                        {% for project in projects %}
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{{ project.photo.url }}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="{{ project.get_absolute_url }}" class="btn gradient-bg mr-2">Read More</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">{{ project.name }}</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0 text-truncate">{{ project.description }}</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+                        {% endfor %}
+                    </div><!-- .swiper-wrapper -->
+
+                </div><!-- .swiper-container -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                </div>
+
+                <div class="swiper-button-prev flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .our-causes -->
+
+<div class="our-causes">
+    <div class="container">
+        <div class="row">
+            <div class="coL-12">
+                <div class="section-heading">
+                    <h2 class="entry-title">Notable Members</h2>
+                </div><!-- .section-heading -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container causes-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-1.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Stephen Hawking</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-2.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Bill Gates</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-3.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Mark Zuckerberg</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-1.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Elon Musk</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-2.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Eric Odhiambo</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-3.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Barack Obama</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+                    </div><!-- .swiper-wrapper -->
+
+                </div><!-- .swiper-container -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                </div>
+
+                <div class="swiper-button-prev flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .our-causes -->
+
+<div class="home-page-limestone">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="coL-12 col-lg-6">
+                <div class="section-heading">
+                    <h2 class="entry-title">We love making theory practical. After 4 years we have many goals achieved.</h2>
+
+                    <p class="mt-5">Dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet.</p>
+                </div><!-- .section-heading -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-6">
+                <div class="milestones d-flex flex-wrap justify-content-between">
+                    <div class="col-12 col-sm-4 mt-5 mt-lg-0">
+                        <div class="counter-box">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="{% static 'img/teamwork.png' %}" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-baseline">
+                                <div class="start-counter" data-to="40" data-speed="2000"></div>
+                            </div>
+
+                            <h3 class="entry-title">Projects Done</h3><!-- entry-title -->
+                        </div><!-- counter-box -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-sm-4 mt-5 mt-lg-0">
+                        <div class="counter-box">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="{% static 'img/donation.png' %}" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-baseline">
+                                <div class="start-counter" data-to="15" data-speed="2000"></div>
+                            </div>
+
+                            <h3 class="entry-title">Research Papers</h3><!-- entry-title -->
+                        </div><!-- counter-box -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-sm-4 mt-5 mt-lg-0">
+                        <div class="counter-box">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="{% static 'img/dove.png' %}" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-baseline">
+                                <div class="start-counter" data-to="1" data-speed="2000"></div>
+                            </div>
+
+                            <h3 class="entry-title">Industries Visited</h3><!-- entry-title -->
+                        </div><!-- counter-box -->
+                    </div><!-- .col -->
+                </div><!-- .milestones -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .our-causes -->
+    {% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container mt-3 mb-3">
+    <div class="card-deck">
+        {% for team in object_list %}
+        <div class="card">
+          <img src="{{ team.photo.url }}" class="card-img-top" alt="{{ team.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ team.name }}</h5>
+            <p class="card-text">{{ team.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</div>
+{% endblock %}

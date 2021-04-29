@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container mt-3 mb-3">
+    <div class="card-deck">
+        {% for article in object_list %}
+        <div class="card">
+          <img src="{{ article.photo.url }}" class="card-img-top" alt="{{ article.title }}">
+          <div class="card-body">
+            <span class="card-title">{{ article.title }}</span> <em>by</em> <a href="{{ article.author.get_absolute_url }}">{{ article.author }}</a>
+            <p class="card-text text-truncate">{{ article.body }}</p>
+            <a href="{{ article.get_absolute_url }}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</div>
+{% endblock %}
